@@ -1,0 +1,9 @@
+SEN-
+<br><br>
+SparkFun Qwiic PIR Sensor
+<br><br>
+The PL-N823-01 Infrared Sensor is sensitive to the infrared emitted from the human body. This is useful for human presence sensing.
+<br><br>
+This sensor uses the ADS1015 I2C ADC converter to convert small signals from the sensor to usable data for a microcontroller. An onboard boost converter pumps up the 3.3V, from the Qwiic connector, to 5V to power the sensor and ADC.
+<br><br>
+This module is equipped with an lens from Kemet Technologies to allow the module to be sensitive up to approximately 5m.
