@@ -15172,6 +15172,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-3" y="3" size="1.016" layer="48">&gt;NAME</text>
 <text x="-3" y="-5" size="1.016" layer="48">&gt;VALUE</text>
 </package>
+<package name="PL-N823-01_LENS">
+<wire x1="-2.5" y1="-2.4" x2="-2.5" y2="2.4" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="2.4" x2="2.5" y2="2.4" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="2.4" x2="2.5" y2="-2.4" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-2.4" x2="-2.5" y2="-2.4" width="0.2032" layer="21"/>
+<smd name="SOURCE" x="-1.125" y="1.6125" dx="1.05" dy="1.475" layer="1"/>
+<smd name="GND@1" x="1.125" y="1.6125" dx="1.05" dy="1.475" layer="1"/>
+<smd name="DRAIN" x="-1.125" y="-1.6125" dx="1.05" dy="1.475" layer="1"/>
+<smd name="GND@2" x="1.125" y="-1.6125" dx="1.05" dy="1.475" layer="1"/>
+<circle x="-1.778" y="-2.921" radius="0.381" width="0.2032" layer="21"/>
+<circle x="-0.5842" y="-2.921" radius="0.381" width="0.2032" layer="21"/>
+<circle x="0.7112" y="-2.921" radius="0.381" width="0.2032" layer="21"/>
+<circle x="1.905" y="-2.921" radius="0.381" width="0.2032" layer="21"/>
+<circle x="1.397" y="0.381" radius="0.127" width="0.2032" layer="21"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-4.5" size="1.016" layer="25">&gt;VALUE</text>
+<hole x="-2.8" y="-2.9" drill="0.6"/>
+<hole x="2.8" y="2.9" drill="0.6"/>
+<wire x1="-3.5" y1="3.3" x2="-3.5" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3.3" x2="3" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3.3" x2="3.5" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-2.54" x2="3.5" y2="3.3" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3.3" x2="-3.5" y2="3.3" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PL-N823-01">
@@ -15194,6 +15218,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </gates>
 <devices>
 <device name="" package="PL-N823-01">
+<connects>
+<connect gate="G$1" pin="DRAIN" pad="DRAIN"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
+<connect gate="G$1" pin="SOURCE" pad="SOURCE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PL-N823-01_LENS" package="PL-N823-01_LENS">
 <connects>
 <connect gate="G$1" pin="DRAIN" pad="DRAIN"/>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2"/>
@@ -18435,7 +18469,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
-<part name="U1" library="PL-N823-01" deviceset="PL-N823-01" device=""/>
+<part name="U1" library="PL-N823-01" deviceset="PL-N823-01" device="PL-N823-01_LENS" value="PL-N823-01PL-N823-01_LENS"/>
 <part name="U2" library="SparkFun-IC-Conversion" deviceset="ADS1015" device="" value="ADS1015"/>
 <part name="U3" library="SparkFun-IC-Power" deviceset="TPS61200" device=""/>
 <part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="0.2MM"/>

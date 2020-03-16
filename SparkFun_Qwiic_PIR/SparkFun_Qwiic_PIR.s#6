@@ -15188,7 +15188,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="1.397" y="0.381" radius="0.127" width="0.2032" layer="21"/>
 <text x="-2.54" y="3.81" size="1.016" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-4.5" size="1.016" layer="25">&gt;VALUE</text>
-<hole x="-2.9" y="-2.8" drill="0.6"/>
+<hole x="-2.8" y="-2.9" drill="0.6"/>
 <hole x="2.8" y="2.9" drill="0.6"/>
 <wire x1="-3.5" y1="3.3" x2="-3.5" y2="-3.3" width="0.2032" layer="21"/>
 <wire x1="-3.5" y1="-3.3" x2="3" y2="-3.3" width="0.2032" layer="21"/>
@@ -18719,14 +18719,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="38.1" y1="45.72" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="43.18" x2="38.1" y2="40.64" width="0.1524" layer="91"/>
 <junction x="38.1" y="43.18"/>
 <pinref part="U3" gate="G$1" pin="UVLO"/>
 <wire x1="55.88" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="45.72" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
 <junction x="45.72" y="43.18"/>
 </segment>
 </net>
